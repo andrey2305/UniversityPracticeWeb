@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
   return sequelize.define(
-    'practice',
+    'practices',
     {
       id_practice: { type: DataTypes.INTEGER, primaryKey: true },
       name: { type: DataTypes.STRING },

@@ -1,8 +1,8 @@
 const db = require('../config/db.config');
-const Practice = db.practices;
+const Practices = db.practices;
 
 exports.getPractice = (req, res) => {
-  Practice.findAll().then(practices => {
+  Practices.findAll().then(practices => {
     const resObj = practices.map(practice => {
       return Object.assign(
         {},

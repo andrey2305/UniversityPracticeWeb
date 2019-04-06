@@ -23,10 +23,10 @@ app.use(cors(corsOptions));
 
 const db = require('./config/db.config');
 
-require('./routes/event.route')(app);
+require('./routes/main.route')(app);
 
 // Create a Server
-const server = app.listen(8080, function() {
+const server = app.listen(8080, function () {
   let host = server.address().address;
   let port = server.address().port;
 
